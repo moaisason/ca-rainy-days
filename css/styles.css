@@ -10,6 +10,7 @@
 }
 .p {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: small;
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
@@ -108,8 +109,7 @@ header {
 
 .side-menu {
     display: grid;
-    grid-column: span 1/3;
-    width: 200px;
+    grid-column: span 1/2;
     padding: 5rem;
   }
   .side-menu ul {
@@ -163,11 +163,6 @@ header {
     padding: 2rem 5rem;
     margin: 10rem 0rem;
   }
-  .thanks-newsletter-text {
-    display: inline-flex;
-    flex-direction: row;
-    gap: 1rem;
-  }
   .newsletter, .thanks-newsletter {
     background-color: #7cb2bf;
     color: #0A3641;
@@ -179,6 +174,11 @@ header {
     width: fit-content;
     height: fit-content;
 }
+  .thanks-newsletter-text {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 1rem;
+}
 
 
 
@@ -188,7 +188,7 @@ header {
   }
   .styles-box {
     display: grid;
-    grid-column: 3/12;
+    grid-column: 3/11;
   }
   .styles-grid {
 	display: grid;
@@ -199,12 +199,6 @@ header {
     "img1 img1 img2 img2 img3 img3 img4 img4"
     "img5 img5 img5 img6 img6 img6 img4 img4"
     "img9 img9 img8 img8 img7 img7 img10 img10";
-  }
-  .styles-grid img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
   }
   .img1 { grid-area: img1; }
   .img2 { grid-area: img2; }
@@ -217,6 +211,12 @@ header {
   .img9 { grid-area: img9; }
   .img10 { grid-area: img10; }
 
+  .styles-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
 
 
 .prod-main-grid {
@@ -226,7 +226,6 @@ header {
   .product-detail {
     display: grid;
     grid-column: 3/11;
-    padding: 2rem;
     gap: 2rem;
   }
   .product-container {
@@ -273,41 +272,15 @@ header {
     padding: 0.75rem 1.5rem;
     border: 2px solid #aaa;
     margin-top: 10rem;
-}
-
-
-
-.related {
-    background-color: #F5F5F5;
-    max-width: fit-content;
-    padding: 2rem;
-    margin: 5rem;
   }
-  .related-images {
-    display: flex;
-    gap: 2rem;
-    max-width: fit-content;
-  }
-  .related-prod {
-    display: grid;
-    grid-column: 3/11;
-  }
-  .related-cart {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  .related-thanks {
-    align-items: center;
-    justify-content: center;
-}
-.reviews {
+  .reviews {
     background-color: #F5F5F5;
     display: grid;
     grid-column: 3/11;
     max-width: fit-content;
     padding: 2rem;
-    margin: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }  
   .review-list {
     display: flex;
@@ -318,14 +291,62 @@ header {
     display: flex;
     border: 2px solid #0A3641;
     padding: 2rem;
+  }
+  .prod-related {
+    display: grid;
+    grid-column: 3/11;
 }
 
+
+
+.related {
+    background-color: #F5F5F5;
+    max-width: fit-content;
+    padding: 2rem;
+  }
+  .related-images {
+    display: flex;
+    gap: 2rem;
+    max-width: fit-content;
+}
+
+
+
+.cart-main-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .cart-prod-detail {
+    display: grid;
+    grid-column: 3/8;
+    gap: 2rem;
+  }
+  .cart-related {
+    display: grid;
+    grid-column: 10/11;
+    gap: 2rem;
+}
+
+
+
+.check-main-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
 .form {
     background-color: #F5F5F5;
     color: #0A3641;
     display: grid;
+    grid-template-columns: 4/9;
 }
-.sucess {
+
+
+
+.thanks-main-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .sucess {
     background-color: #EAD3BF;
     display: flex;
     align-items: center;
@@ -335,6 +356,11 @@ header {
     padding: 2rem;
     border: 2px solid #0A3641;
     margin: 5rem auto;
+  }
+  .thanks-related {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -410,11 +436,17 @@ footer {
   .side-menu, .head-left, .menu, .searchbox {
     display: none;
   }
+  .searchbox {
+    background-color: transparent;
+  }
   .head-right {
     margin-top: 0.5rem;
     width: 100%;
     display: flex;
     gap: 0.5rem;
+  }
+  .head-left {
+    margin-top: 0,5rem;
   }
   .mobile-nav {
     display: block;
@@ -467,7 +499,7 @@ footer {
     flex-direction: column;
     gap: 1rem;
   }
-  .categories, .reviews, .related, .related-thanks, .thanks-newsletter {
+  .categories, .reviews, .prod-related, .thanks-related, .thanks-newsletter {
     display: flex;
     flex-direction: column;
     align-items: center;
