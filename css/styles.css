@@ -26,7 +26,6 @@ a {
     list-style: none;
 }
 
-
  /*Body basics*/
 body {
     color: #0A3641;
@@ -60,7 +59,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
-
 
  /*Header element*/
 header {
@@ -109,7 +107,6 @@ header {
     border: none;
 }
 
-
  /*Side menu*/
 .side-menu {
     display: grid;
@@ -129,9 +126,20 @@ header {
     text-decoration: underline;
 }
 
-
  /*Index page*/
-.hero {
+.cta-message{
+    background-color: #F5F5F5; opacity: 70%;
+    color: #35474B;
+    display: flex;
+    max-width: fit-content;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 4rem;
+    text-transform: uppercase;
+    margin: 5rem auto;
+    text-align: center;
+  }
+ .hero {
     display: flex;
     justify-content: center;
     margin-top:  5rem;
@@ -149,7 +157,7 @@ header {
     text-decoration: none;
     padding: 1rem 4rem;
     font-weight: bold;
-    margin: 10rem, 10rem;
+    margin: 10rem, auto;
   }
   .box-cta {
     display: flex;
@@ -183,7 +191,6 @@ header {
     flex-direction: row;
     gap: 1rem;
 }
-
 
  /*Women styles page*/
 .styles-main-grid {
@@ -220,6 +227,9 @@ header {
     height: 100%;
     object-fit: cover;
     display: block;
+  }
+  .img1:hover {
+    opacity: 50%;
 }
 
  /*Product page*/
@@ -299,7 +309,6 @@ header {
     grid-column: 3/11;
 }
 
-
  /*Related styles element*/
 .related {
     background-color: #F5F5F5;
@@ -308,9 +317,7 @@ header {
   }
   .related-images {
     display: flex;
-
 }
-
 
  /*Cart page*/
 .cart-main-grid {
@@ -342,7 +349,6 @@ header {
     max-height: 567px;
 }
 
-
  /*Checkout page*/
 .check-main-grid {
     display: grid;
@@ -358,7 +364,6 @@ header {
     padding-right: 15rem;
     padding-bottom: 5rem;
 }
-
 
  /*Thank you-page*/
   .sucess {
@@ -376,7 +381,6 @@ header {
     display: inline-flex;
     margin-bottom: 5rem;
 }
-
 
  /*Footer-element*/
 footer {
@@ -405,7 +409,6 @@ footer {
     align-self: flex-end;
     margin: 5rem;
 }
-
 
  /*Dropdown menu on small screens*/
 .mobile-nav {
@@ -439,7 +442,6 @@ footer {
     color: #0A3641;
     font-weight: bold;
 }
-
 
  /*Responsive layout*/
 @media screen and (max-width: 768px) {
