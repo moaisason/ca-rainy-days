@@ -1,3 +1,4 @@
+ /*General elements*/
 .h1, h2, h3, a {
     font-family: "Karla", Verdana, Geneva, Tahoma, sans-serif;
     font-optical-sizing: auto;
@@ -26,7 +27,7 @@ a {
 }
 
 
-
+ /*Body basics*/
 body {
     color: #0A3641;
     margin: 0%;
@@ -61,7 +62,7 @@ body {
 }
 
 
-
+ /*Header element*/
 header {
     background-color: #F5F5F5; opacity: 70%;
     display: flex;  
@@ -91,6 +92,9 @@ header {
     flex-direction: row;
     justify-content: space-between;
   }
+  .head-right {
+    margin-top: 1rem;
+  }
   .searchfield {
     display: flex;
     justify-content: space-between;
@@ -106,7 +110,7 @@ header {
 }
 
 
-
+ /*Side menu*/
 .side-menu {
     display: grid;
     grid-column: span 1/2;
@@ -126,7 +130,7 @@ header {
 }
 
 
-
+ /*Index page*/
 .hero {
     display: flex;
     justify-content: center;
@@ -181,7 +185,7 @@ header {
 }
 
 
-
+ /*Women styles page*/
 .styles-main-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -218,7 +222,7 @@ header {
     display: block;
 }
 
-
+ /*Product page*/
 .prod-main-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -296,7 +300,7 @@ header {
 }
 
 
-
+ /*Related styles element*/
 .related {
     background-color: #F5F5F5;
     max-width: fit-content;
@@ -308,7 +312,7 @@ header {
 }
 
 
-
+ /*Cart page*/
 .cart-main-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -339,7 +343,7 @@ header {
 }
 
 
-
+ /*Checkout page*/
 .check-main-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -348,7 +352,7 @@ header {
     background-color: #F5F5F5;
     color: #0A3641;
     display: grid;
-    grid-columns: 4/9;
+    grid-column: 4/9;
     padding-top: 5rem;
     padding-left: 15rem;
     padding-right: 15rem;
@@ -356,7 +360,7 @@ header {
 }
 
 
-
+ /*Thank you-page*/
   .sucess {
     background-color: #EAD3BF;
     display: flex;
@@ -369,12 +373,12 @@ header {
     margin: 5rem auto;
   }
   .thanks-related {
-    display: flex;
+    display: inline-flex;
     margin-bottom: 5rem;
 }
 
 
-
+ /*Footer-element*/
 footer {
     background-color: #35474B; opacity: 70%;
     color: #EAD3BF;
@@ -403,7 +407,7 @@ footer {
 }
 
 
-
+ /*Dropdown menu on small screens*/
 .mobile-nav {
     display: none;
     padding: 1rem;
@@ -437,7 +441,7 @@ footer {
 }
 
 
-
+ /*Responsive layout*/
 @media screen and (max-width: 768px) {
   .menu {
     flex-direction: column;
