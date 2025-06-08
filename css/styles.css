@@ -144,7 +144,6 @@ header {
     display: flex;
     justify-content: center;
     margin-top:  5rem;
-
   }
   .hero-image {
     width: 100%;
@@ -397,6 +396,7 @@ header {
   .thanks-newsletter {
     background-color: #0A3641;
     color: #F5F5F5;
+    padding: 5px 20px;
   }
   .thanks-newsletter-text {
     display: inline-flex;
