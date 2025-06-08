@@ -62,7 +62,7 @@ body {
 
  /*Header element*/
 header {
-    background-color: #F5F5F5; opacity: 70%;
+    background-color: rgba(245, 245, 245, 0.7);
     display: flex;  
     justify-content: space-between;
     padding: 2rem;
@@ -128,7 +128,7 @@ header {
 
  /*Index page*/
 .cta-message{
-    background-color: #F5F5F5; opacity: 70%;
+    background-color: rgba(245, 245, 245, 0.7);
     color: #35474B;
     display: flex;
     max-width: fit-content;
@@ -143,7 +143,7 @@ header {
     display: flex;
     justify-content: center;
     margin-top:  5rem;
-    margin-bottom: 5rem;
+
   }
   .hero-image {
     width: 100%;
@@ -155,25 +155,26 @@ header {
     background-color: #35474B;
     color: #F5F5F5;
     text-decoration: none;
+    text-transform: uppercase;
     padding: 1rem 4rem;
     font-weight: bold;
-    margin: 10rem, auto;
+    margin: 5rem auto;
   }
   .box-cta {
     display: flex;
     justify-content: center;
   }
   .cta:hover {
-    text-transform: uppercase;
+    box-shadow: 5px #0A3641;
   }
   .categories {
-    background-color: #EAD3BF;
+    background-color: rgba(234, 211, 191, 0.7);
     color: #0A3641;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2rem 5rem;
-    margin: 10rem 0rem;
+    margin: 5rem 0rem;
   }
   .newsletter, .thanks-newsletter {
     background-color: #7cb2bf;
@@ -384,7 +385,7 @@ header {
 
  /*Footer-element*/
 footer {
-    background-color: #35474B; opacity: 70%;
+    background-color: rgba(53, 71, 75, 0.7);
     color: #EAD3BF;
     margin-top: 10rem;
     display: flex;
