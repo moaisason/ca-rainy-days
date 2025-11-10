@@ -1,19 +1,19 @@
  /*General elements*/
-.h1, h2, h3, a {
+h1, h2, h3, a {
     font-family: "Karla", Verdana, Geneva, Tahoma, sans-serif;
     font-optical-sizing: auto;
 }
-.h2 {
+h2 {
     font-size: medium;
 }
-.h3 {
-    font-size: small;
+h3 {
+    font-size: 23px;
 }
-.p {
+p, li, label, button {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: small;
+    font-size: 20px;
     font-optical-sizing: auto;
-    font-weight: 100;
+    font-weight: 300;
     font-style: normal;
     font-variation-settings:
     "width" 100;
@@ -22,8 +22,11 @@ a {
     color: #0A3641;
     text-decoration: none;
 }
-.li {
+li {
     list-style: none;
+}
+button {
+  font-size: 16px;
 }
 
  /*Body basics*/
@@ -50,11 +53,7 @@ body {
     background-color: #EAD3BF;
   }
   .body-checkout {
-    color: #EAD3BF;
     background-color: #0A3641;
-  }
-  .body-checkout li a {
-    color: #EAD3BF;
   }
   .body-thanks {
     background-image: url(../images/back-drop.jpg);
@@ -133,6 +132,9 @@ header {
   }
   .side-menu li a:hover {
     text-decoration: underline;
+  }
+  .checkout-side-menu a{
+    color: #EAD3BF;
 }
 
  /*Index page*/
@@ -163,6 +165,7 @@ header {
     background-color: #35474B;
     color: #F5F5F5;
     text-decoration: none;
+    border: 1px #0A3641;
     text-transform: uppercase;
     padding: 1rem 4rem;
     font-weight: bold;
@@ -181,7 +184,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 5rem;
+    padding: 2rem 10rem;
     margin: 5rem 0rem;
   }
   .newsletter {
@@ -190,7 +193,7 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 5px 20px;
+    padding: 2px 20px 20px 20px;
     margin: auto;
     width: fit-content;
     height: fit-content;
@@ -224,7 +227,6 @@ header {
   .styles-grid {
   	display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: auto;
 	  gap: 1rem;
     grid-template-areas:
     "img1 img1 img2 img2 img3 img3 img4 img4"
@@ -245,8 +247,18 @@ header {
   .styles-grid img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
     display: block;
+    object-fit: cover;
+  }
+  .styles-grid a, .styles-grid a img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  .img1 {
+    grid-area: img1;
+    min-height: 400px;
   }
   .img1:hover {
     opacity: 50%;
@@ -333,10 +345,11 @@ header {
 .related {
     background-color: #F5F5F5;
     max-width: fit-content;
+    max-height: fit-content;
     padding: 2rem;
   }
   .related-images {
-    display: flex;
+    gap: 2rem;
 }
 
  /*Cart page*/
@@ -344,29 +357,28 @@ header {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
   }
-  .cart-img {
-    max-height: 400px;
-  }
-  .cart-prod-detail {
+  .cart-prod-detail { /*h1+img+info+related*/
     display: grid;
-    grid-column: 3/8;
+    grid-column: 3/11;
     gap: 2rem;
   }
-  .cart-prod-container {
-    display: flex;
-    flex-direction: row;
+  .cart-prod-container { /*h1+img+info*/
+    display: grid;
+    grid-column: 3/8;
   }
-    .cart-prod-info{
+  .cart-img {
+
+  }
+  .cart-prod-info{
     background-color: #F5F5F5;
-    max-width: 587px;
+    display: grid;
+    grid-column: 5/8;
     padding: 2rem;
-    margin-left: 2rem;
   }
   .cart-related {
     display: grid;
     grid-column: 10/11;
     gap: 2rem;
-    max-height: 567px;
 }
 
  /*Checkout page*/
@@ -379,18 +391,18 @@ header {
     color: #0A3641;
     display: grid;
     grid-column: 4/9;
-    padding-top: 5rem;
-    padding-left: 15rem;
-    padding-right: 15rem;
-    padding-bottom: 5rem;
+    padding: 5rem 15rem;
 }
 
  /*Thank you-page*/
-  .sucess {
-    background-color: #EAD3BF;
+ .thanks-main {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+  } 
+ .sucess {
+    background-color: #EAD3BF;
+
     max-width: fit-content;
     gap: 5px;
     padding: 2rem;
@@ -398,7 +410,6 @@ header {
     margin: 5rem auto;
   }
   .thanks-related {
-    display: inline-flex;
     margin-bottom: 5rem;
   }
   .thanks-newsletter {
