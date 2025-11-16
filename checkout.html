@@ -50,8 +50,9 @@
                 <input class="searchbox" type="text" placeholder="Search"/>
                 <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #aaa;"></i> 
             </div>
-            <a href="cart.html">
+            <a href="cart.html" class="cart-number">
                 <i class="fa-solid fa-cart-shopping fa-xl" style="color: #0a3641;"></i>
+                <span class="cart-badge">0</span>
             </a>
         </section>
     </header>
@@ -85,16 +86,16 @@
         <a href="cart.html">← Back to cart</a>
         <fieldset class="form">
             <h1>Checkout</h1>
-            <button>Log in</button>
-            <button>Register</button>
+            <h2>Log in / Register</h2>
             <img src="images/divider.png">
-            <button>Log in</button>
+            <h2>Log in</h2>
                 <label for="username">Username</label>
             <input type="text" name="username" id="username">
                 <label for="password">Password</label>
             <input type="text" name="password" id="password">
             <button>Submit</button>
             <img src="images/divider.png">
+            <h2>Register</h2>
                 <label for="name">Full name</label>
             <input type="text" name="name" id="name">
                 <label for="adress">Adress</label>
@@ -111,6 +112,15 @@
             <input type="text" name="confirm" id="confirm">
             <button>Submit</button>
             <img src="images/divider.png">
+            <section class="checkout-summary">
+                <h2>Your order</h2>
+                <div class="checkout-items"></div>
+                <p class="checkout-total">
+                    <strong>Total:</strong> <span id="checkout-total">0</span> kr
+                </p>
+            </section>
+            <img src="images/divider.png">
+            <h2>Payment details</h2>
                 <p>Type of card</p>
                 <select name="card">
                     <option value="master">Mastercard</option>
@@ -181,5 +191,7 @@
             <i class="fa-brands fa-square-youtube fa-2xl" style="color: #ead3bf;"></i>  
         </section>
     </footer>
+    <script src="js/checkout.js"></script>
+    <script src="js/all-pages.js"></script>
 </body>
 </html>

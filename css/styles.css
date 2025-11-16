@@ -244,23 +244,7 @@ header {
   .img9 { grid-area: img9; }
   .img10 { grid-area: img10; }
 
-  .styles-grid img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-  }
-  .styles-grid a, .styles-grid a img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-  }
-  .img1 {
-    grid-area: img1;
-    min-height: 400px;
-  }
-  .img1:hover {
+  .styles-grid img:hover {
     opacity: 50%;
 }
 
@@ -276,6 +260,8 @@ header {
   .product-container {
     display: flex;
     flex-direction: row;
+    max-height: 45rem;
+    width: auto;
   }
   .product-info {
     background-color: #F5F5F5;
@@ -357,28 +343,49 @@ header {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
   }
+  .cart-number {
+    position: relative;
+    display: inline-block;
+  }
+  .cart-badge {
+    background-color: #F5F5F5;
+    color: #0A3641;
+    font-size: 0,5rem;
+    font-weight: 500;
+    padding: 2px 4px;
+    border-radius: 50%;
+    display: none;
+    position: absolute;
+    top: -16px;
+    right: -10px;
+  }
   .cart-prod-detail { /*h1+img+info+related*/
     display: grid;
     grid-column: 3/11;
-    gap: 2rem;
   }
   .cart-prod-container { /*h1+img+info*/
+    background-color: #F5F5F5;
     display: grid;
     grid-column: 3/8;
+    padding: 2rem;
   }
-  .cart-img {
-
+  .cart-item img {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
   }
   .cart-prod-info{
     background-color: #F5F5F5;
     display: grid;
     grid-column: 5/8;
-    padding: 2rem;
+  
   }
   .cart-related {
     display: grid;
     grid-column: 10/11;
     gap: 2rem;
+    margin-left: 2rem;
+    max-height: 790px;
 }
 
  /*Checkout page*/
@@ -392,6 +399,9 @@ header {
     display: grid;
     grid-column: 4/9;
     padding: 5rem 15rem;
+  }
+  .checkout-items img {
+    height: 100px;
 }
 
  /*Thank you-page*/
@@ -400,7 +410,7 @@ header {
     flex-direction: column;
     align-items: center;
   } 
- .sucess {
+ .success {
     background-color: #EAD3BF;
 
     max-width: fit-content;
@@ -559,7 +569,7 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-  footer, .sucess {
+  footer, .success {
     flex-direction: column;
     align-items: center;
     text-align: center;

@@ -50,8 +50,9 @@
                 <input class="searchbox" type="text" placeholder="Search"/>
                 <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #aaa;"></i> 
             </div>
-            <a href="cart.html">
+            <a href="cart.html" class="cart-number">
                 <i class="fa-solid fa-cart-shopping fa-xl" style="color: #0a3641;"></i>
+                <span class="cart-badge">0</span>
             </a>
         </section>
     </header>
@@ -85,10 +86,10 @@
         <section class="product-detail">
             <a href="women.html">← Back to women</a>
             <div class="product-container">
-                <img src="images/style-detail.jpg" alt="Woman with beige hat and blue sunglasses wearing petrol blue Not so Rainy jacket" />
+                <img id="product-image" src="images/style-detail.jpg" alt="Woman with beige hat and blue sunglasses wearing petrol blue Not so Rainy jacket" />
             <div class="product-info">
-            <h1>Not so Rainy Jacket</h1>
-            <ul>
+            <h1 id="product-title">Not so Rainy Jacket</h1>
+            <ul id="product-details">
                 <li>Zip fastening</li>
                 <li>Elasticated cuffs</li>
                 <li>Chest pocket in main fabric</li>
@@ -98,10 +99,10 @@
                 <li>Padding: Comfortemp® Padding 100% Recycled Polyester</li>
                 <li>Lining: 100% Recycled Polyester</li>
                 <p>Care Instructions</p>
-                <p>2500:-</p>
+                <p class="price" id="product-price">2500:-</p>
             </ul>
             <div class="options">
-                <div class="sizes">
+                <div class="sizes" id="sizes">
                     <button>XS</button>
                     <button>S</button>
                     <button>M</button>
@@ -109,7 +110,7 @@
                     <button>XL</button>
                     <button>XXL</button>
                 </div>
-                <div class="colors">
+                <div class="colors" id="baseColor">
                     <button>Carbon black</button>
                     <button>Petrolium</button>
                     <button>Steel Gray</button>
@@ -223,5 +224,7 @@
             <i class="fa-brands fa-square-youtube fa-2xl" style="color: #ead3bf;"></i>  
         </section>
     </footer>
+    <script src="js/product.js"></script>
+    <script src="js/all-pages.js"></script>
 </body>
 </html>

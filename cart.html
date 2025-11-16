@@ -50,8 +50,9 @@
                 <input class="searchbox" type="text" placeholder="Search"/>
                 <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #aaa;"></i> 
             </div>
-            <a href="cart.html">
+            <a href="cart.html" class="cart-number">
                 <i class="fa-solid fa-cart-shopping fa-xl" style="color: #0a3641;"></i>
+                <span class="cart-badge">0</span>
             </a>
         </section>
     </header>
@@ -82,24 +83,12 @@
             </nav>
         </aside>
         <section class="cart-prod-detail">
+            <a href="product.html">← Back to style</a>
             <div class="cart-prod-container">
-                <a href="product.html">← Back to style</a>
-                <img src="images/style-cart.jpg" class="cart-img" alt="style 1">
                 <h1>Cart</h1>
-                <div class="cart-prod-info">
-                    <h2>Not so Rainy Jacket</h2>
-                    <a>2500:-</a>
-                    <div class="options">
-                        <div class="sizes">
-                            <button>M</button>
-                        </div>
-                        <div class="colors">
-                            <button>Petrolium</button>
-                        </div>
-                        <p>Shipping: 49:-</p>
-                        <p>Taxes: 750:-</p>
-                        <p>Total amount: 2549:-</p>
-                    </div>
+                <div class="cart-items"></div>
+                <div class="cart-summary">
+                    <p><strong>Total:</strong> <span class="cart-total">0</span> kr</p>
                     <a href="checkout.html" class="cta">Proceed to checkout</a>
                 </div>
             </div>  
@@ -167,5 +156,7 @@
             <i class="fa-brands fa-square-youtube fa-2xl" style="color: #ead3bf;"></i>  
         </section>
     </footer>
+    <script src="js/cart.js"></script>
+    <script src="js/all-pages.js"></script>
 </body>
 </html>
