@@ -1,48 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Rainy Days | Children Styles</title>
+    <title>Rainy Days | Cart</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta
     name="description"
-    content="Shop beutiful and functional clothing for women with an active lifestyle"
+    content="This is the overview of what you have added to your cart"
     />
-    <link href="css/styles.css" rel="stylesheet"/>
-    <link rel="icon" href="/images/rain-cloud.svg" type="image/png">
+    <link href="../css/components.css" rel="stylesheet"/>
+    <link href="../css/styles.css" rel="stylesheet"/>
+    <link rel="icon" href="../assets/icons/rain-cloud.svg" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body class="body-styles">
+
+<body class="body-cart">
     <header>
         <section class="mobile-nav">
             <input type="checkbox" id="menu-toggle" />
             <label for="menu-toggle" class="menu-icon"><i class="fa-solid fa-cloud-showers-heavy fa-xl" style="color: #0a3641;"></i></label>
             <nav class="mobile-menu">
                 <ul>
-                    <li><a href="#">Women</a></li>
-                    <li><a href="#">Children</a></li>
-                    <li><a href="#">Men</a></li>
+                    <li><a href="../user-flow/women.html">Women</a></li>
+                    <li><a href="../user-flow/children.html">Children</a></li>
+                    <li><a href="../user-flow/men.html">Men</a></li>
                 </ul>
             </nav>
         </section>
         <section class="head-left">
-            <a href="user.html">
+            <a href="../user-flow/user.html">
                <i class="fa-solid fa-cloud-showers-heavy fa-xl" style="color: #0a3641;"></i>
             </a>
             <nav>
                 <ul class="menu">
-                    <li><a href="women.html">Women</a></li>
-                    <li><a href="children.html">Children</a></li>
-                    <li><a href="men.html">Men</a></li>
+                    <li><a href="../user-flow/women.html">Women</a></li>
+                    <li><a href="../user-flow/children.html">Children</a></li>
+                    <li><a href="../user-flow/men.html">Men</a></li>
                 </ul>
             </nav>
         </section>
         <section>
-            <a href="index.html">
-            <img src="images/logo.png" alt="logo Rainy Days, text with mountains behind and frase - Pushing the comfort zone" class="logo">
+            <a href="../index.html">
+            <img src="../assets/icons/logo.png" alt="logo Rainy Days, text with mountains behind and frase - Pushing the comfort zone" class="logo">
             </a>
         </section>
         <section class="head-right">
@@ -50,56 +52,66 @@
                 <input class="searchbox" type="text" placeholder="Search"/>
                 <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #aaa;"></i> 
             </div>
-            <a href="cart.html" class="cart-number">
+            <a href="../checkout-flow/cart.html" class="cart-number">
                 <i class="fa-solid fa-cart-shopping fa-xl" style="color: #0a3641;"></i>
                 <span class="cart-badge">0</span>
             </a>
         </section>
     </header>
-    <main class="styles-main-grid"> 
+
+    <main class="cart-main-grid">
         <aside>
             <nav class="side-menu">
-                <h3><a href="women.html">Women</a></h3>
+                <ul>
+                    <h3><a href="../user-flow/women.html">Women</a></h3>
+                    <li><a href="#">Indoor</a></li>
+                    <li><a href="#">Outdoor</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Accessories</a></li>
+                </ul>
+                <h3><a href="../user-flow/children.html">Children</a></h3>
                 <ul>
                     <li><a href="#">Indoor</a></li>
                     <li><a href="#">Outdoor</a></li>
                     <li><a href="#">Sports</a></li>
                     <li><a href="#">Accessories</a></li>
                 </ul>
-                <h3><a href="children.html">Children →</a></h3>
+                <h3><a href="../user-flow/men.html">Men</a></h3>
                 <ul>
-                    <li><a href="#">Indoor</a></li>
-                    <li><a href="#">Outdoor</a></li>
-                    <li><a href="#">Sports</a></li>
-                    <li><a href="#">Accessories</a></li>
-                </ul>
-                <h3><a href="men.html">Men</a></h3>
-                <ul>
-                    <li><a href="#">Indoor</a></li>
-                    <li><a href="#">Outdoor</a></li>
-                    <li><a href="#">Sports</a></li>
-                    <li><a href="#">Accessories</a></li>
+                  <li><a href="#">Indoor</a></li>
+                  <li><a href="#">Outdoor</a></li>
+                  <li><a href="#">Sports</a></li>
+                  <li><a href="#">Accessories</a></li>
                 </ul>
             </nav>
         </aside>
-        <section class="styles-box">
-            <h1>Children</h1>
-            <div class="styles-grid">
-                <a href="product.html" class="img1">
-                    <img src="images/style-1.jpg" alt="Woman with beige hat and blue sunglasses wearing petrol blue Not so Rainy jacket">
-                </a>
-                    <img src="images/style-2.jpg" class="img2" alt="Woman with hat and sunglasses wearing dark blue short-sleeved vest with soft white hoodie underneath">
-                    <img src="images/style-3.jpg" class="img3" alt="Woman with white hat wearing dark blue duffel jacket">
-                    <img src="images/style-4.jpg" class="img4" alt="Woman with hat and sunglasses wearing medium blue short-sleeved vest with soft blue hoodie underneath">
-                    <img src="images/style-5.jpg" class="img5" alt="Woman wearing dazy blue padded bomber jacket">
-                    <img src="images/style-6.jpg" class="img6" alt="Woman with beige hat and blue sunglasses wearing petrol blue Not so Rainy jacket">
-                    <img src="images/style-7.jpg" class="img7" alt="Woman enjoying the sun, wearing bright blue rainhat and rainjacket">
-                    <img src="images/style-8.jpg" class="img8" alt="Woman with hat and sunglasses wearing medium blue short-sleeved vest with soft blue hoodie underneath">
-                    <img src="images/style-9.jpg" class="img9" alt="Woman in front of lake wearing bright blue rainjacket">
-                    <img src="images/style-10.jpg" class="img10" alt="Woman in forest wearing beige rainjacket">
-            </div>
+        <section class="cart-prod-detail">
+            <a href="../user-flow/product.html">← Back to style</a>
+            <div class="cart-prod-container">
+                <h1>Cart</h1>
+                <div class="cart-items"></div>
+                <div class="cart-summary">
+                    <p><strong>Total:</strong> <span class="cart-total">0</span> kr</p>
+                    <a href="../checkout-flow/checkout.html" class="cta">Proceed to checkout</a>
+                </div>
+            </div>  
+            <section class="related cart-related">
+                <h3>Related styles</h3>
+                <div class="related-cart">
+                    <a href="../user-flow/women.html">
+                    <img src="../assets/images/rel-style1.jpg" alt="" />
+                    </a>
+                    <a href="../user-flow/women.html">
+                    <img src="../assets/images/rel-style2.jpg" alt="" />
+                    </a>
+                    <a href="../user-flow/women.html">
+                    <img src="../assets/images/rel-style3.jpg" alt="" />
+                    </a>
+                </div>
+            </section>  
         </section>
     </main>
+
     <footer>
         <section class="foot-links">
             <div>
@@ -148,6 +160,8 @@
             <i class="fa-brands fa-square-youtube fa-2xl" style="color: #ead3bf;"></i>  
         </section>
     </footer>
-    <script src="js/all-pages.js"></script>
+
+    <script src="../js/cart.js"></script>
+    <script src="../js/all-pages.js"></script>
 </body>
 </html>
